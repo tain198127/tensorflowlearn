@@ -73,7 +73,8 @@ class Reptile(object):
                         crypto = AES.new(KEY, AES.MODE_CBC, IV)
                         c_fule_name + ".mp4"
                         with open(os.path.join(download_path, c_fule_name), 'ab') as f:
-                            f.write(crypto.decrypt(cont))
+                            # f.write(crypto.decrypt(cont))
+                            f.write(cont)
                             pass
                         pass
                     else:
